@@ -5,23 +5,23 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">User id</label>
-                <input type="number" class="form-control">
+                <input name="userId" [(ngModel)]="userId" type="number" class="form-control">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">id</label>
-                <input type="number" name="" id="" class="form-control">
+                <input type="number" name="id" [(ngModel)]="id" id="" class="form-control">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Title</label>
-                <input type="text" name="" id="" class="form-control">
+                <input type="text" name="title" [(ngModel)]="title" id="" class="form-control">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Body</label>
-                <input type="text" name="" id="" class="form-control">
+                <input type="text" name="body" [(ngModel)]="body" id="" class="form-control">
             </div>
-            <div class="row g-3 div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 div col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label"></label>
-                <button class="btn btn-primary">Submit</button>
+                <button (click)="addPosts()" class="btn btn-primary">Submit</button>
             </div>
         </div>
     </div>
